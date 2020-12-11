@@ -1,14 +1,11 @@
 import mongoose from "mongoose";
-import express, { NextFunction, Request, Response } from "express";
+import express from "express";
 import cors from "cors";
 import passport from "passport";
 import cookieParser from "cookie-parser";
 import session from "express-session";
-import bcrypt from "bcryptjs";
-import User from "./models/User";
 import { config } from "./config";
-import { userInterface } from "./Interfaces/UserInterface";
-import { DatabaseUserInterface } from "./Interfaces/UserInterface";
+
 import userRoutes from "./routes/users.routes";
 
 //------------------------Mongoose----------------------
